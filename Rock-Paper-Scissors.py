@@ -1,8 +1,7 @@
 # ROCK PAPER SCISSORS
-
 import random
 
-possible_options = ["stone", "paper", "scissors"]
+possible_options = ["rock", "paper", "scissors"]
 maximum_number_of_games = int(input("Enter the maximum number of games\n"))
 while maximum_number_of_games % 2 == 0:
     maximum_number_of_games = int(input("It has to be an odd number. Try again!\n"))
@@ -15,7 +14,7 @@ def machine_play_generator():
 
 
 def user_choice():
-    user_input = input("Stone, paper or scissors? Enter your play\n")
+    user_input = input("Rock, paper or scissors? Enter your play\n")
     while user_input not in possible_options:
         user_input = input("Try again\n")
     return user_input
@@ -24,8 +23,8 @@ def user_choice():
 def combat(m_play, u_play):
     if m_play == u_play:
         return 0
-    elif (m_play == 'stone' and u_play == 'scissors') or (m_play == 'scissors' and u_play == 'paper') or (
-            m_play == 'paper' and u_play == 'stone'):
+    elif (m_play == 'rock' and u_play == 'scissors') or (m_play == 'scissors' and u_play == 'paper') or (
+            m_play == 'paper' and u_play == 'rock'):
         return 1
     else:
         return 2
