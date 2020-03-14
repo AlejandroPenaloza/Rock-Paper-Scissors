@@ -3,7 +3,7 @@
 It contains the well-known game 'Rock, Paper, Scissors' automated in its classic original version so as another new implementations.
 
 
-1
+
 
 ## Rock-Paper-Scissors-Lizard-Spock
 The first file 'Rock, Paper, Scissors, Lizard, Spock' consists in the same game but including the 'Lizard' and 'Spock' characters, 
